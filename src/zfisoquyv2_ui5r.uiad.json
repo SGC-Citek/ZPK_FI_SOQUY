@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Sổ quỹ tiền mặt/tiền gửi",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfisoquyv2"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_2BCA67A0B1607BB34D1576C726980B4DFBB569DA_TM",
+    "semanticObject": "zfisoquyv2",
+    "action": "Print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_2BCA67A0B1607BB34D1576C726980B4DFBB569DA_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Sổ quỹ tiền mặt/tiền gửi",
+        "subtitle": "ZCM04"
+      }
+    }
+  ]
+}

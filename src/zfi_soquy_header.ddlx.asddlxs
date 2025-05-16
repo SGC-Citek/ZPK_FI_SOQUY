@@ -1,0 +1,51 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Sổ quỹ tiền mặt',
+                typeNamePlural: 'Sổ quỹ tiền mặt',
+                title: { type: #STANDARD, label: 'Phiếu Xuất Kho', value: 'CompanyCode' } },
+  presentationVariant: [{ sortOrder: [{ by: 'CompanyCode', direction:  #DESC }] }] }
+annotate view ZFI_SOQUY_HEADER
+    with parameters
+    
+    @EndUserText.label: 'From Date'
+    FromDate,
+    @EndUserText.label: 'To Date'
+    ToDate,
+    @EndUserText.label: 'Ngày mở sổ'
+    NgayMoSo,
+    @Consumption.defaultValue: 'X'
+    @EndUserText.label: 'Is Include Reversed'
+    IsIncludeReversed
+{
+@UI.facet: [
+  {
+    id: 'Header',
+    purpose: #STANDARD,
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'Header',
+    position: 10
+  },{ id:              'Item',
+                 purpose:         #STANDARD,
+                 type:            #LINEITEM_REFERENCE,
+                 label:           'Item',
+                 position:        20,
+                 targetElement:   '_Item'} ] 
+    @UI: { lineItem:       [ { position: 10, label: 'CompanyCode' } ],
+       identification: [ { position: 10 , label: 'CompanyCode'} ],
+       selectionField: [ { position: 10 } ] }
+   CompanyCode;  
+     @UI: { lineItem:       [ { position: 20, label: 'GLAccount' } ],
+       identification: [ { position: 20 , label: 'GLAccount'} ],
+       selectionField: [ { position: 20 } ] }
+   GLAccount;  
+   //@Consumption.defaultValue: '2023'
+     //@UI: { lineItem:       [ { position: 30, label: 'FiscalYear' } ],
+       //identification: [ { position: 30 , label: 'FiscalYear'} ],
+       //selectionField: [ { position: 30 } ] }
+   //FiscalYear;
+   @UI: { lineItem:       [ { position: 50, label: 'Currency' } ],
+       identification: [ { position: 50 , label: 'Currency'} ],
+       selectionField: [ { position: 50 } ] }
+   Currency; 
+    
+}

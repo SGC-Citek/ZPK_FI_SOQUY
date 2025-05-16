@@ -1,0 +1,44 @@
+@Metadata.layer: #CORE
+annotate view ZFI_I_SOQUY_ITEM
+    with 
+{
+    @UI: { lineItem:       [ { position: 10, label: 'CompanyCode' } ],
+       identification: [ { position: 10 , label: 'CompanyCode'} ]}
+   CompanyCode;  
+    @UI: { lineItem:       [ { position: 20, label: 'FiscalYear' } ],
+       identification: [ { position: 20 , label: 'FiscalYear'} ]}
+   FiscalYear;
+    @UI: { lineItem:       [ { position: 30, label: 'AccountingDocument' } ],
+       identification: [ { position: 30 , label: 'AccountingDocument'} ]}
+   AccountingDocument; 
+   @UI: { lineItem:       [ { position: 40, label: 'AccountingDocumentItem' } ],
+       identification: [ { position: 40 , label: 'AccountingDocumentItem'} ]}
+   AccountingDocumentItem; 
+   @UI: { lineItem:       [ { position: 50, label: 'GLAccount' } ],
+       identification: [ { position: 50 , label: 'GLAccount'} ]}
+   GLAccount; 
+   @UI: { lineItem:       [ { position: 60, label: 'PostingDate' } ],
+       identification: [ { position: 60 , label: 'PostingDate'} ]}
+   PostingDate; 
+   @UI: { lineItem:       [ { position: 70, label: 'Tên người nhận tiền' } ],
+       identification: [ { position: 70 , label: 'Tên người nhận tiền'} ]}
+   TenNguoiNNTien; 
+   @UI: { lineItem:       [ { position: 80, label: 'Mã người nhận tiền' } ],
+       identification: [ { position: 80 , label: 'Mã người nhận tiền'} ]}
+   MaNguoiNNTien; 
+   @UI: { lineItem:       [ { position: 90, label: 'Diễn Giải' } ],
+       identification: [ { position: 90 , label: 'Diễn Giải'} ]}
+   DienGiai; 
+   @UI: { lineItem:       [ { position: 100, label: 'Số tiền thu VND' } ],
+       identification: [ { position: 100 , label: 'Số tiền thu VND'} ]}
+   SoTienThuVND; 
+   @UI: { lineItem:       [ { position: 110, label: 'Số tiền thu ngoại tệ' } ],
+       identification: [ { position: 110 , label: 'Số tiền thu ngoại tệ'} ]}
+   SoTienThuNT;
+   @UI: { lineItem:       [ { position: 120, label: 'Số tiền chi VND' } ],
+       identification: [ { position: 120 , label: 'Số tiền chi VND'} ]}
+   SoTienChiVND; 
+   @UI: { lineItem:       [ { position: 130, label: 'Số tiền chi ngoại tệ' } ],
+       identification: [ { position: 130 , label: 'Số tiền chi ngoại tệ'} ]}
+   SoTienChiNT; 
+}

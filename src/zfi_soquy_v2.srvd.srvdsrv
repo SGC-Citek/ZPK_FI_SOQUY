@@ -1,0 +1,4 @@
+@EndUserText.label: 'Sổ quỹ definition v2'
+define service ZFI_SOQUY_V2 {
+  expose ZFI_I_SOQUY;
+}
